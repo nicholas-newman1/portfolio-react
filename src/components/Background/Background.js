@@ -4,8 +4,8 @@ import './background.css';
 
 const Background = () => {
   return (
-    <div class='background'>
-      <img class='background__image' src={src} alt='background' />
+    <div className='background'>
+      <img className='background__image' src={src} alt='background' />
     </div>
   );
 };
