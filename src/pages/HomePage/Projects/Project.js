@@ -8,7 +8,7 @@ const Project = ({ project }) => {
       <Link className='project__img-link' to={`/project/${project.id}`}>
         <div
           className='project__img'
-          style={{ backgroundImage: `url(${project.images[0].src})` }}
+          style={{ backgroundImage: `url(${project.preview.src})` }}
         />
       </Link>
       <h3 className='project__title'>
