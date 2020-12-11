@@ -1,9 +1,5 @@
 .projects {
-  margin: 5rem 0;
-}
-
-.projects__heading {
-  margin-bottom: 5rem;
+  padding: 5rem 0;
 }
 
 .projects__list {

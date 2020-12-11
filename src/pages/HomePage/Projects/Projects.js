@@ -6,7 +6,7 @@ import './projects.css';
 const Projects = () => {
   return (
     <section className='projects'>
-      <h2 className='projects__heading section-heading'>Projects</h2>
+      <h2 className='section-heading'>Projects</h2>
       <ul className='projects__list'>
         {projects.map((project) => (
           <Project project={project} key={project.id} />
