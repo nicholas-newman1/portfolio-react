@@ -1,0 +1,40 @@
+.footer {
+  background: rgba(0,0,0,0.6);
+}
+
+.footer__container {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.footer__logo::after {
+  content: '';
+  width: 50%;
+  height: 4px;
+  background:  #00add8;
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+.footer__social-links {
+  width: 10rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer__nav {
+  text-align: center;
+}
+
+.footer__nav a::after {
+  bottom: -8px;
+}
