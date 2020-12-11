@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -28,12 +30,12 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  
+  text-transform: uppercase;
 }
 
 .section-heading::after {
   content: '';
-  background:  #00add8;
+  background: #00add8;
   width: 3rem;
   height: 2px;
   position: absolute;

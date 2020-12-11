@@ -1,5 +1,5 @@
 .footer {
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .footer__container {
@@ -19,11 +19,11 @@
   content: '';
   width: 50%;
   height: 4px;
-  background:  #00add8;
+  background: #00add8;
   position: absolute;
   bottom: -0.75rem;
   left: 50%;
-  transform: translateX(-50%)
+  transform: translateX(-50%);
 }
 
 .footer__social-links {
