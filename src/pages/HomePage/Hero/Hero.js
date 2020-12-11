@@ -1,5 +1,5 @@
 import React from 'react';
-import SocialLinks from '../../components/SocialLinks/SocialLinks';
+import SocialLinks from '../../../components/SocialLinks/SocialLinks';
 import './hero.css';
 
 const Hero = () => {
