@@ -10,7 +10,7 @@ function App() {
       <Background />
       <Header />
 
-      <main className='main container'>
+      <main className='main'>
         <Switch>
           <Route exact path='/' component={HomePage} />
         </Switch>

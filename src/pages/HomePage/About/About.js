@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section className='about'>
       <h2 className='section-heading'>About</h2>
-      <div className='about__text-container'>
+      <div className='about__text-container container'>
         <p className='about__text'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
           itaque voluptas cum quibusdam temporibus iusto eius tenetur numquam

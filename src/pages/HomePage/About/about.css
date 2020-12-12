@@ -1,13 +1,10 @@
 .about {
   padding: 5rem 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .about__text-container {
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  padding: 1.5rem;
   max-width: 600px;
-  margin: 0 auto;
 }
 
 .about__text {
