@@ -18,7 +18,7 @@
 .footer__logo::after {
   content: '';
   width: 50%;
-  height: 4px;
+  height: 2px;
   background: #00add8;
   position: absolute;
   bottom: -0.75rem;
