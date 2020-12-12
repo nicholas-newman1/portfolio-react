@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import './nav.css';
 
 const Nav = () => {
@@ -9,9 +9,13 @@ const Nav = () => {
       <ul className='nav__list'>
         {navLinks.map((link) => (
           <li className='nav__item' key={link}>
-            <Link to={`${link === 'Home' ? '/' : link}`} className='nav__link'>
+            <HashLink
+              className='nav__link'
+              to={`#${link.toLowerCase()}`}
+              smooth
+            >
               {link}
-            </Link>
+            </HashLink>
           </li>
         ))}
       </ul>
