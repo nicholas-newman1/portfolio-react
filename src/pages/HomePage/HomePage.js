@@ -2,12 +2,11 @@ import React from 'react';
 import About from './About/About';
 import Contact from './Contact/Contact';
 import Hero from './Hero/Hero';
-import './homePage.css';
 import Projects from './Projects/Projects';
 
 const HomePage = () => {
   return (
-    <div className='home'>
+    <div>
       <Hero />
       <Projects />
       <About />
