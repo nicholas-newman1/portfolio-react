@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import HomePage from './pages/HomePage/HomePage';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
+import ContactBubble from './components/ContactBubble/ContactBubble';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         </Switch>
       </main>
 
+      <ContactBubble />
       <Footer />
     </Router>
   );

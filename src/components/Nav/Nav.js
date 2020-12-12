@@ -11,7 +11,7 @@ const Nav = () => {
           <li className='nav__item' key={link}>
             <HashLink
               className='nav__link'
-              to={`#${link.toLowerCase()}`}
+              to={`/#${link.toLowerCase()}`}
               smooth
             >
               {link}

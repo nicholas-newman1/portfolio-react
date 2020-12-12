@@ -1,0 +1,18 @@
+.contact-bubble {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  width: 5rem;
+  fill: white;
+  z-index: 100;
+  background: rgba(0, 173, 216, 0.9);
+  padding: 0.9rem;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.contact-bubble:hover {
+  transform: scale(1.1);
+  opacity: 90%;
+}
