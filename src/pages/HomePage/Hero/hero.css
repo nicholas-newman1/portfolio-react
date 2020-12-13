@@ -38,6 +38,7 @@
   width: 20%;
   max-width: 10rem;
   min-width: 7rem;
+  margin: 0 auto;
 }
 
 @media (min-width: 900px) {
@@ -49,5 +50,9 @@
   .hero__text::after {
     left: 0;
     transform: translateX(0);
+  }
+
+  .hero__social {
+    margin: 0;
   }
 }
