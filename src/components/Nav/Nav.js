@@ -2,7 +2,7 @@ import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 import './nav.css';
 
-const Nav = () => {
+const Nav = ({ setDisplayNav }) => {
   const navLinks = ['Home', 'Projects', 'About', 'Contact'];
   return (
     <nav className='nav'>
@@ -13,6 +13,7 @@ const Nav = () => {
               className='nav__link'
               to={`/#${link.toLowerCase()}`}
               smooth
+              onClick={() => setDisplayNav(false)}
             >
               {link}
             </HashLink>

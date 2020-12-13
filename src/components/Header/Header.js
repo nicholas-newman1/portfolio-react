@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Hamburger from '../Hamburger/Hamburger';
 import Logo from '../Logo/Logo';
 import Nav from '../Nav/Nav';
@@ -6,9 +6,16 @@ import './header.css';
 
 const Header = () => {
   const [displayNav, setDisplayNav] = useState(false);
+  const header = useRef();
+
+  useEffect(() => {
+    document
+      .querySelector('main')
+      .addEventListener('click', () => setDisplayNav(false));
+  }, []);
 
   return (
-    <header className='header'>
+    <header ref={header} className='header'>
       <div className='header__container container'>
         <div className='header__logo'>
           <Logo />
@@ -24,7 +31,7 @@ const Header = () => {
         <div
           className={`header__nav${displayNav ? '' : ' header__nav--hidden'}`}
         >
-          <Nav />
+          <Nav setDisplayNav={setDisplayNav} />
         </div>
       </div>
     </header>

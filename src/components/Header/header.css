@@ -27,7 +27,7 @@
     position: absolute;
     top: 100%;
     left: -6%; /* magic number */
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.8);
     border-top: 1px solid white;
     width: 100%;
     transform-origin: top;
