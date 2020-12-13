@@ -8,9 +8,10 @@
 }
 
 .about__text {
+  font-weight: 300;
   text-align: center;
   color: white;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
 }
 
 .about__text + .about__text {
