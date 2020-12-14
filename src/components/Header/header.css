@@ -1,9 +1,14 @@
 .header {
   position: fixed;
-  top: 0;
+  top: -5rem;
   width: 100%;
   background: rgba(0, 0, 0, 0.9);
   z-index: 100;
+  transition: 400ms ease 300ms;
+}
+
+.header.animate {
+  top: 0;
 }
 
 .header__container {

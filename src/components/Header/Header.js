@@ -12,6 +12,8 @@ const Header = () => {
     document
       .querySelector('main')
       .addEventListener('click', () => setDisplayNav(false));
+
+    header.current.classList.add('animate');
   }, []);
 
   return (

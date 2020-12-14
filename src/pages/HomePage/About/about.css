@@ -5,6 +5,12 @@
 
 .about__text-container {
   max-width: 600px;
+  opacity: 0;
+  transition: 500ms;
+}
+
+.about__text-container.animate {
+  opacity: 100%;
 }
 
 .about__text {

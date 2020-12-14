@@ -8,6 +8,17 @@
   text-align: center;
 }
 
+.hero__container {
+  transform: translateX(-50%);
+  transition: 700ms ease;
+  opacity: 0;
+}
+
+.animate .hero__container {
+  transform: translateX(0);
+  opacity: 100;
+}
+
 .hero__heading {
   color: white;
   font-weight: 800;

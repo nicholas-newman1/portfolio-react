@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { HashLink } from 'react-router-hash-link';
+import useIntersectionObserver from '../../../hooks/useIntersectionObserver';
 import './about.css';
 
 const About = () => {
+  const aboutText = useRef();
+
+  useIntersectionObserver(aboutText);
+
   return (
     <section id='about' className='about'>
       <h2 className='section-heading'>About Me</h2>
-      <div className='about__text-container container'>
+      <div ref={aboutText} className='about__text-container container'>
         <p className='about__text'>
           I was about 12 years old when I wrote my first Hello World program. I
           remember the fascination I felt when I saw logic that I had written,
