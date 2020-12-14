@@ -1,6 +1,6 @@
 import React from 'react';
-import Email from '../../../components/svgs/Email';
-import Phone from '../../../components/svgs/Phone';
+import Email from '../../../components/SVGs/Email';
+import Phone from '../../../components/SVGs/Phone';
 import './contact.css';
 
 const Contact = () => {
