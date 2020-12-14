@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
-import useIntersectionObserver from '../../../hooks/useIntersectionObserver';
+import useAnimation from '../../../hooks/useAnimation';
 import './project.css';
 
 const Project = ({ project }) => {
   const projectRef = useRef();
-  useIntersectionObserver(projectRef);
+  useAnimation(projectRef);
 
   return (
     <li ref={projectRef} className='project'>

@@ -1,12 +1,12 @@
 import React, { useRef } from 'react';
 import SocialLinks from '../../../components/SocialLinks/SocialLinks';
-import useIntersectionObserver from '../../../hooks/useIntersectionObserver';
+import useAnimation from '../../../hooks/useAnimation';
 import './hero.css';
 
 const Hero = () => {
   const heroRef = useRef();
 
-  useIntersectionObserver(heroRef);
+  useAnimation(heroRef);
 
   return (
     <section ref={heroRef} id='home' className='hero'>

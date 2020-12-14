@@ -1,12 +1,12 @@
 import React, { useRef } from 'react';
 import { HashLink } from 'react-router-hash-link';
-import useIntersectionObserver from '../../../hooks/useIntersectionObserver';
+import useAnimation from '../../../hooks/useAnimation';
 import './about.css';
 
 const About = () => {
   const aboutTextRef = useRef();
 
-  useIntersectionObserver(aboutTextRef);
+  useAnimation(aboutTextRef);
 
   return (
     <section id='about' className='about'>
