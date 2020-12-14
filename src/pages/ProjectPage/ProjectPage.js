@@ -23,8 +23,8 @@ const ProjectPage = ({ match }) => {
       <div className='project-page__main-content'>
         <img
           className='project-page__img'
-          src={project.preview.src}
-          alt={project.preview.alt}
+          src={project.image.src}
+          alt={project.image.alt}
         />
         <div className='project-page__text'>
           <div className='project-page__features'>
