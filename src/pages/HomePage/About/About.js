@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashLink } from 'react-router-hash-link';
 import './about.css';
 
 const About = () => {
@@ -10,13 +11,12 @@ const About = () => {
           I was about 12 years old when I wrote my first Hello World program. I
           remember the fascination I felt when I saw logic that I had written,
           compile into an executable program that did exactly what I told it to
-          do. I felt like I would be able to make anything I wanted, I was only
-          limited by my imagination.
+          do. It felt like I could make anything I wanted.
         </p>
         <p className='about__text'>
-          No, I did not become a child prodigy. By the time I got to highschool,
-          I had lost all interest in programming, and got distracted by teenage
-          shenanigans. A few years later, I ended up at the University of
+          No, I did not become a child prodigy. By the time I got to highschool
+          I was distracted by teenage shenanigans and had lost all interest in
+          programming. A few years later, I ended up at the University of
           Toronto, studying psychology.
         </p>
         <p className='about__text'>
@@ -26,14 +26,26 @@ const About = () => {
         </p>
         <p className='about__text'>
           Ever since that decision, I have been learning the skills required to
-          be a web developer. I began with HTML, moved on to CSS, and then
+          be a web developer. I began with HTML, then moved on to CSS, and then
           started to tackle JavaScript. After spending some time with
           JavaScript, I began to dabble with React and Sass.
         </p>
         <p className='about__text'>
-          I have put together some projects which can be seen above or on my
-          GitHub. I am now actively searching for job opportunities. Feel free
-          to contact me at any time!
+          I have put together some projects which can be seen{' '}
+          <HashLink className='about__link' to='/#projects'>
+            above
+          </HashLink>{' '}
+          or on my{' '}
+          <a
+            className='about__link'
+            href='https://github.com/nicholas-newman1'
+            target='_blank'
+            rel='noreferrer'
+          >
+            GitHub
+          </a>
+          . I am actively searching for job opportunities. Feel free to contact
+          me at any time!
         </p>
       </div>
     </section>

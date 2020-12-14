@@ -17,3 +17,8 @@
 .about__text + .about__text {
   margin-top: 1rem;
 }
+
+.about__link {
+  color: #00add8;
+  font-weight: 400;
+}
