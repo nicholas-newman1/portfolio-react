@@ -4,9 +4,9 @@
 }
 
 .contact__form {
-  margin-top: -0rem;
   display: flex;
   flex-direction: column;
+  margin-bottom: 4rem;
 }
 
 .contact__label {
@@ -42,4 +42,67 @@
 
 .contact__submit:hover {
   opacity: 90%;
+}
+
+.contact__details {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.contact__link {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 300ms;
+}
+
+.contact__link:hover {
+  transform: scale(1.05);
+}
+
+.contact__link + .contact__link {
+  margin-top: 2rem;
+}
+
+.contact__phone {
+  margin-top: 1rem;
+}
+
+.contact__icon {
+  flex-shrink: 0;
+  width: 40px;
+  fill: #00add8;
+  fill: white;
+  margin-bottom: 0.25rem;
+}
+
+.contact__link {
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+@media (min-width: 370px) {
+  .contact__link {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 450px) {
+  .contact__details {
+    max-width: 400px;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+  .contact__link {
+    flex-direction: row;
+    font-size: 1rem;
+  }
+
+  .contact__icon {
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
 }
