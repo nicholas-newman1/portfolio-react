@@ -4,12 +4,12 @@ import useIntersectionObserver from '../../../hooks/useIntersectionObserver';
 import './hero.css';
 
 const Hero = () => {
-  const hero = useRef();
+  const heroRef = useRef();
 
-  useIntersectionObserver(hero);
+  useIntersectionObserver(heroRef);
 
   return (
-    <section ref={hero} id='home' className='hero'>
+    <section ref={heroRef} id='home' className='hero'>
       <div className='hero__container container'>
         <h1 className='hero__heading'>Hi, I'm Nicholas.</h1>
         <p className='hero__text'>Your Future Web Developer</p>

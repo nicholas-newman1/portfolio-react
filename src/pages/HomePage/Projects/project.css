@@ -3,6 +3,14 @@
   padding: 1.5rem;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
+  transform: scale(0.2);
+  opacity: 0;
+  transition: 300ms ease;
+}
+
+.project.animate {
+  transform: scale(1);
+  opacity: 100%;
 }
 
 .project__img {

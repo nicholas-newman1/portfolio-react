@@ -4,14 +4,14 @@ import useIntersectionObserver from '../../../hooks/useIntersectionObserver';
 import './about.css';
 
 const About = () => {
-  const aboutText = useRef();
+  const aboutTextRef = useRef();
 
-  useIntersectionObserver(aboutText);
+  useIntersectionObserver(aboutTextRef);
 
   return (
     <section id='about' className='about'>
       <h2 className='section-heading'>About Me</h2>
-      <div ref={aboutText} className='about__text-container container'>
+      <div ref={aboutTextRef} className='about__text-container container'>
         <p className='about__text'>
           I was about 12 years old when I wrote my first Hello World program. I
           remember the fascination I felt when I saw logic that I had written,

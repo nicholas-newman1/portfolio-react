@@ -11,6 +11,11 @@
   border-radius: 100%;
   cursor: pointer;
   transition: 300ms;
+  transform: scale(0);
+}
+
+.contact-bubble.animate {
+  transform: scale(1);
 }
 
 .contact-bubble:hover {

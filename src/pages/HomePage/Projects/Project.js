@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
+import useIntersectionObserver from '../../../hooks/useIntersectionObserver';
 import './project.css';
 
 const Project = ({ project }) => {
+  const projectRef = useRef();
+  useIntersectionObserver(projectRef);
+
   return (
-    <li className='project'>
+    <li ref={projectRef} className='project'>
       <Link className='project__img-link' to={`/project/${project.id}`}>
         <div
           className='project__img'

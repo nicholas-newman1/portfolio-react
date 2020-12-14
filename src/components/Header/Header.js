@@ -6,18 +6,18 @@ import './header.css';
 
 const Header = () => {
   const [displayNav, setDisplayNav] = useState(false);
-  const header = useRef();
+  const headerRef = useRef();
 
   useEffect(() => {
     document
       .querySelector('main')
       .addEventListener('click', () => setDisplayNav(false));
 
-    header.current.classList.add('animate');
+    headerRef.current.classList.add('animate');
   }, []);
 
   return (
-    <header ref={header} className='header'>
+    <header ref={headerRef} className='header'>
       <div className='header__container container'>
         <div className='header__logo'>
           <Logo />
