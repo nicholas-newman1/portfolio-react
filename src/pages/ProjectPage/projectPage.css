@@ -1,6 +1,12 @@
 .project-page {
   margin-top: 7rem;
   margin-bottom: 6rem;
+  opacity: 0;
+  transition: 500ms ease;
+}
+
+.project-page.animate {
+  opacity: 1;
 }
 
 .project-page__heading {

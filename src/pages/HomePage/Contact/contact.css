@@ -7,6 +7,14 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 4rem;
+  transform: translateX(-50vw);
+  opacity: 0;
+  transition: 700ms ease;
+}
+
+.contact__form.animate {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .contact__label {
@@ -48,6 +56,14 @@
   background: rgba(0, 0, 0, 0.5);
   padding: 1rem;
   border-radius: 10px;
+  transform: translateX(50vw);
+  opacity: 0;
+  transition: 700ms ease;
+}
+
+.contact__details.animate {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .contact__link {

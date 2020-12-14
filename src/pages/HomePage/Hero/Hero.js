@@ -9,8 +9,8 @@ const Hero = () => {
   useAnimation(heroRef);
 
   return (
-    <section ref={heroRef} id='home' className='hero'>
-      <div className='hero__container container'>
+    <section id='home' className='hero'>
+      <div ref={heroRef} className='hero__container container'>
         <h1 className='hero__heading'>Hi, I'm Nicholas.</h1>
         <p className='hero__text'>Your Future Web Developer</p>
         <div className='hero__social'>

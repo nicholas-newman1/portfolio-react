@@ -1,17 +1,21 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Tag from '../../components/Tag/Tag';
 import { projects } from '../../data';
 import './projectPage.css';
 
 const ProjectPage = ({ match }) => {
+  const pageRef = useRef();
+
   useEffect(() => {
     window.scroll(0, 0);
+    pageRef.current.classList.add('animate');
   }, []);
 
   const projectId = match.params.id;
   const project = projects.find((x) => x.id === Number(projectId));
+
   return (
-    <div className='project-page container'>
+    <div ref={pageRef} className='project-page container'>
       <h1 className='project-page__heading'>{project.title}</h1>
       <div className='project-page__tags'>
         {project.tags.map((tag) => (
