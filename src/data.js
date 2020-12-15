@@ -2,7 +2,7 @@ import stockSite from './images/stock-site-home-page.jpg';
 import fakeStore from './images/fake-store-home-page.jpg';
 import ticTacToe from './images/tic-tac-toe-mid-game.png';
 import watchShop from './images/watch-shop-home-page.jpg';
-import todoApp from './images/todo-app.png';
+import todoApp from './images/todo-app.jpg';
 
 export const projects = [
   {
@@ -98,11 +98,11 @@ export const projects = [
     image: { src: todoApp, alt: 'Todo app' },
     tags: [
       { text: 'html', backgroundColor: '#E54D26' },
-      { text: 'scss', backgroundColor: '#C6538C' },
+      { text: 'css', backgroundColor: '#0071BD' },
       { text: 'js', backgroundColor: '#E7A229' },
     ],
-    features: ['Browse products'],
-    skills: ['SCSS Preprocessor', 'BEM naming convention', 'Git Workflow'],
+    features: ['Add todo items', 'Complete todo items', 'Delete todo items'],
+    skills: ['The Module Pattern', 'Create elements', 'Select elements'],
     liveUrl: 'https://gallant-meninsky-30e418.netlify.app',
     codeUrl: 'https://github.com/nicholas-newman1/todo-app-vanilla',
   },

@@ -52,12 +52,26 @@ const ProjectPage = ({ match }) => {
             </ul>
           </div>
           <div className='project-page__btns'>
-            <button className='project-page__btn project-page__btn--live'>
-              Visit Live
-            </button>
-            <button className='project-page__btn project-page__btn--code'>
-              View Code
-            </button>
+            <a
+              className='project-page__btn-link'
+              href={project.liveUrl}
+              target='_blank'
+              rel='noreferrer'
+            >
+              <button className='project-page__btn project-page__btn--live'>
+                Visit Live
+              </button>
+            </a>
+            <a
+              className='project-page__btn-link'
+              href={project.codeUrl}
+              target='_blank'
+              rel='noreferrer'
+            >
+              <button className='project-page__btn project-page__btn--code'>
+                View Code
+              </button>
+            </a>
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ const useIntersectionObserver = (ref) => {
           }
         });
       },
-      { rootMargin: '0% 0% -25% 0%' }
+      { rootMargin: '0% 0% -10% 0%' }
     );
     observer.observe(ref.current);
     //eslint-disable-next-line
