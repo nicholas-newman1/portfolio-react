@@ -2,6 +2,7 @@ import React from 'react';
 import GitHubSvg from './GitHubSvg';
 import LinkedInSvg from './LinkedInSvg';
 import ResumeSvg from './ResumeSvg';
+import resumeSrc from '../../files/resume-nicholas-newman.pdf';
 
 import './socialLinks.css';
 
@@ -30,12 +31,7 @@ const SocialLinks = () => {
           </a>
         </li>
         <li className='social-links__item'>
-          <a
-            href='https://github.com/nicholas-newman1'
-            className='social-links__link'
-            target='_blank'
-            rel='noreferrer'
-          >
+          <a href={resumeSrc} className='social-links__link' download>
             <ResumeSvg />
           </a>
         </li>
