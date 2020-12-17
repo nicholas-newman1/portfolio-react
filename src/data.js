@@ -42,9 +42,8 @@ export const projects = [
     ],
     features: ['Browse products', 'Add products to cart', 'Checkout'],
     skills: [
-      'Reusable components + Hooks',
-      'Fetching data from an API',
-      'Context API',
+      'ES6 Modules',
+      'Inject Dynamic HTML',
       'BEM Naming Convention',
       'Responsive Design',
       'Git Workflow',
