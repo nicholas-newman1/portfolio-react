@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
-import SocialLinks from '../../../components/SocialLinks/SocialLinks';
-import useAnimation from '../../../hooks/useAnimation';
+import SocialLinks from '../SocialLinks/SocialLinks';
+import useAnimation from '../../hooks/useAnimation';
 import './hero.css';
 
 const Hero = () => {

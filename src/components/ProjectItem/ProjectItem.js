@@ -1,9 +1,9 @@
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
-import useAnimation from '../../../hooks/useAnimation';
-import './project.css';
+import useAnimation from '../../hooks/useAnimation';
+import './projectItem.css';
 
-const Project = ({ project }) => {
+const ProjectItem = ({ project }) => {
   const projectRef = useRef();
   useAnimation(projectRef);
 
@@ -45,4 +45,4 @@ const Project = ({ project }) => {
   );
 };
 
-export default Project;
+export default ProjectItem;

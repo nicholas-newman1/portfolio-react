@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { HashLink } from 'react-router-hash-link';
-import useAnimation from '../../../hooks/useAnimation';
+import useAnimation from '../../hooks/useAnimation';
 import './about.css';
 
 const About = () => {
