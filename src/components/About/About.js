@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import { HashLink } from 'react-router-hash-link';
 import useAnimation from '../../hooks/useAnimation';
 import './about.css';
 
@@ -37,9 +36,9 @@ const About = () => {
         </p>
         <p className='about__text'>
           I have put together some projects which can be seen{' '}
-          <HashLink className='about__link' to='/#projects'>
+          <a className='about__link' href='#projects'>
             above
-          </HashLink>{' '}
+          </a>{' '}
           or on my{' '}
           <a
             className='about__link'

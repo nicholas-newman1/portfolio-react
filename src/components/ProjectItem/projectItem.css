@@ -2,8 +2,9 @@
   width: 100%;
   padding: 1.5rem;
   background: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
+  border-radius: 5px;
   transform: scale(0.2);
+  transform-origin: top;
   opacity: 0;
   transition: 300ms ease;
 }
@@ -13,47 +14,48 @@
   opacity: 1;
 }
 
-.project__img {
-  background-size: cover;
-  width: 100%;
-  padding-bottom: 50%;
-  margin-bottom: 1rem;
-}
-
 .project__title {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.project__title-link {
   color: white;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-decoration: none;
-  transition: 300ms;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.project__title-link:hover {
-  color: #ddd;
+.project__tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  margin-left: -0.5rem;
+}
+
+.project__tag {
+  margin: 0.5rem;
+}
+
+.project__p {
+  color: white;
+}
+
+.project__p + .project__p {
+  margin-top: 1rem;
 }
 
 .project__btns {
-  display: flex;
-  justify-content: space-between;
-}
-
-.project__btn-link {
-  display: inline-block;
-  width: 48%;
+  margin-top: 1rem;
 }
 
 .project__btn {
-  padding: 0.5rem 0;
-  width: 100%;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
   border: none;
+  border-radius: 5px;
   color: white;
   transition: 300ms;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.project__btn + .project__btn {
+  margin-left: 1rem;
 }
 
 .project__btn:hover {
@@ -66,4 +68,16 @@
 
 .project__btn--code {
   background: #444;
+}
+
+@media (max-width: 340px) {
+  .project__btns {
+    display: grid;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .project__btn + .project__btn {
+    margin-left: 0;
+  }
 }

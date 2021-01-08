@@ -6,16 +6,6 @@
   list-style: none;
   display: grid;
   gap: 2rem;
-}
-
-@media (min-width: 700px) {
-  .projects__list {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 1200px) {
-  .projects__list {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+  max-width: 1000px;
+  margin: 0 auto;
 }

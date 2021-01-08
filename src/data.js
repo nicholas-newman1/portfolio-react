@@ -1,32 +1,16 @@
-import stockSite from './images/stock-site-home-page.jpg';
-import fakeStore from './images/fake-store-home-page.jpg';
-import ticTacToe from './images/tic-tac-toe-mid-game.png';
-import watchShop from './images/watch-shop-home-page.jpg';
-import todoApp from './images/todo-app.jpg';
-
 export const projects = [
   {
     id: 1,
     title: 'Stock Site',
-    image: { src: stockSite, alt: 'Stock site home page' },
     tags: [
       { text: 'html', backgroundColor: '#E54D26' },
       { text: 'css', backgroundColor: '#0071BD' },
       { text: 'js', backgroundColor: '#E7A229' },
       { text: 'react', backgroundColor: '#50BBD8' },
     ],
-    features: [
-      'Stock market news',
-      'Real-time stock, forex, cryptocurrency, and commodity quotes',
-      'Watchlist',
-    ],
-    skills: [
-      'Reusable components + Hooks',
-      'Fetching data from an API',
-      'Context API',
-      'BEM Naming Convention',
-      'Responsive Design',
-      'Git Workflow',
+    description: [
+      'A website where you can search for stock quotes, cryptocurrency prices, foreign exchange rates, and more. For free!',
+      "This project allowed me to get a solid grasp on React. I developed skills such as creating components, using hooks, using the context API, consuming REST API's, etc.",
     ],
     liveUrl: 'https://cocky-mayer-6414d2.netlify.app',
     codeUrl: 'https://github.com/nicholas-newman1/stock-site',
@@ -34,19 +18,15 @@ export const projects = [
   {
     id: 2,
     title: 'Fake Store',
-    image: { src: fakeStore, alt: 'Fake store home page' },
     tags: [
       { text: 'html', backgroundColor: '#E54D26' },
       { text: 'css', backgroundColor: '#0071BD' },
       { text: 'js', backgroundColor: '#E7A229' },
     ],
-    features: ['Browse products', 'Add products to cart', 'Checkout'],
-    skills: [
-      'ES6 Modules',
-      'Inject Dynamic HTML',
-      'BEM Naming Convention',
-      'Responsive Design',
-      'Git Workflow',
+    description: [
+      'An ecommerce store where you can browse products, filter by category, and add products to the cart.',
+      'This project made me appreciate the work that frameworks do. I learned how to make component-like objects with vanilla JS.',
+      'I also developed my ability to make responsive websites, as well as use the BEM naming convention.',
     ],
     liveUrl: 'https://elated-banach-5e96c0.netlify.app',
     codeUrl: 'https://github.com/nicholas-newman1/fake-store-vanilla',
@@ -54,25 +34,14 @@ export const projects = [
   {
     id: 3,
     title: 'Tic Tac Toe',
-    image: { src: ticTacToe, alt: 'Tic tac toe mid game' },
     tags: [
       { text: 'html', backgroundColor: '#E54D26' },
       { text: 'scss', backgroundColor: '#C6538C' },
       { text: 'js', backgroundColor: '#E7A229' },
     ],
-    features: [
-      'Singleplayer or Twoplayer',
-      'Easy, medium, and hard (impossible to win) difficulties',
-    ],
-    skills: [
-      'Module design pattern',
-      'Understanding closure',
-      'Reusable functions',
-      'Injecting dynamic HTML',
-      'SCSS Preprocessor',
-      'BEM Naming Convention',
-      'Responsive Design',
-      'Git Workflow',
+    description: [
+      'A tic-tac-toe game with both single and multiplayer modes. Singleplayer has three difficulties: easy, medium, and hard (impossible to win).',
+      'I used the module pattern and injected all HTML with JavaScript. Using the module pattern allowed me to develop a better understanding of closures.',
     ],
     liveUrl: 'https://stupefied-franklin-2a03b1.netlify.app',
     codeUrl: 'https://github.com/nicholas-newman1/tic-tac-toe',
@@ -80,28 +49,30 @@ export const projects = [
   {
     id: 4,
     title: 'Watch Shop',
-    image: { src: watchShop, alt: 'watch shop home page' },
     tags: [
       { text: 'html', backgroundColor: '#E54D26' },
       { text: 'scss', backgroundColor: '#C6538C' },
       { text: 'js', backgroundColor: '#E7A229' },
     ],
-    features: ['Browse products'],
-    skills: ['SCSS Preprocessor', 'BEM naming convention', 'Git Workflow'],
+    description: [
+      'A simple watch shop where you can browse different products.',
+      'This project was mainly aimed at developing my SCSS skills, as it was the first project I used a CSS preprocessor.',
+    ],
     liveUrl: 'https://boring-wing-3a4e41.netlify.app',
     codeUrl: 'https://github.com/nicholas-newman1/watch-shop',
   },
   {
     id: 5,
     title: 'Todo App',
-    image: { src: todoApp, alt: 'Todo app' },
     tags: [
       { text: 'html', backgroundColor: '#E54D26' },
       { text: 'css', backgroundColor: '#0071BD' },
       { text: 'js', backgroundColor: '#E7A229' },
     ],
-    features: ['Add todo items', 'Complete todo items', 'Delete todo items'],
-    skills: ['The Module Pattern', 'Create elements', 'Select elements'],
+    description: [
+      'A simple todo app. Add items, mark them as completed, or delete unwanted items.',
+      'The goal of this project was to understand the module pattern. I also reinforced my ability to manipulate the DOM with JavaScript.',
+    ],
     liveUrl: 'https://gallant-meninsky-30e418.netlify.app',
     codeUrl: 'https://github.com/nicholas-newman1/todo-app-vanilla',
   },

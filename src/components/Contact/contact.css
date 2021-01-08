@@ -3,62 +3,13 @@
   max-width: 500px;
 }
 
-.contact__form {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 4rem;
-  transform: translateX(-50vw);
-  opacity: 0;
-  transition: 700ms ease;
-}
-
-.contact__form.animate {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.contact__label {
-  color: white;
-}
-
-.contact__label + .contact__label {
-  margin-top: 1rem;
-}
-
-.contact__input,
-.contact__textarea {
-  padding: 0.5rem;
-  width: 100%;
-  margin-top: 0.5rem;
-}
-
-.contact__submit {
-  align-self: center;
-  background: #00add8;
-  color: white;
-  border: none;
-  margin-top: 1.5rem;
-  padding: 0.75rem 2rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
-  font-size: 1rem;
-  border-radius: 2px;
-  cursor: pointer;
-  transition: 300ms;
-}
-
-.contact__submit:hover {
-  opacity: 90%;
-}
-
 .contact__details {
   background: rgba(0, 0, 0, 0.5);
   padding: 1rem;
   border-radius: 10px;
   transform: translateX(50vw);
   opacity: 0;
-  transition: 700ms ease;
+  transition: 300ms ease;
 }
 
 .contact__details.animate {

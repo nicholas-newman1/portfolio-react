@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Link } from 'react-router-dom';
+import Tag from '../../components/Tag/Tag';
 import useAnimation from '../../hooks/useAnimation';
 import './projectItem.css';
 
@@ -9,36 +9,39 @@ const ProjectItem = ({ project }) => {
 
   return (
     <li ref={projectRef} className='project'>
-      <Link className='project__img-link' to={`/project/${project.id}`}>
-        <div
-          className='project__img'
-          style={{ backgroundImage: `url(${project.image.src})` }}
-        />
-      </Link>
-      <h3 className='project__title'>
-        <Link className='project__title-link' to={`/project/${project.id}`}>
-          {project.title}
-        </Link>
-      </h3>
+      <h3 className='project__title'>{project.title}</h3>
+
+      <div className='project__tags'>
+        {project.tags.map((tag) => (
+          <div key={tag.text} className='project__tag'>
+            <Tag text={tag.text} backgroundColor={tag.backgroundColor} />
+          </div>
+        ))}
+      </div>
+
+      {project.description.map((paragraph, i) => (
+        <p key={i} className='project__p'>
+          {paragraph}
+        </p>
+      ))}
+
       <div className='project__btns'>
         <a
-          className='project__btn-link'
+          className='project__btn project__btn--live'
           href={project.liveUrl}
           target='_blank'
           rel='noreferrer'
         >
-          <button className='project__btn project__btn--live'>
-            Visit Live
-          </button>
+          Visit Live
         </a>
 
         <a
-          className='project__btn-link'
+          className='project__btn project__btn--code'
           href={project.codeUrl}
           target='_blank'
           rel='noreferrer'
         >
-          <button className='project__btn project__btn--code'>View Code</button>
+          View Code
         </a>
       </div>
     </li>

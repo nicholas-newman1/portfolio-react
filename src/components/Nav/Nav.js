@@ -1,5 +1,4 @@
 import React from 'react';
-import { HashLink } from 'react-router-hash-link';
 import './nav.css';
 
 const Nav = ({ setDisplayNav }) => {
@@ -9,14 +8,14 @@ const Nav = ({ setDisplayNav }) => {
       <ul className='nav__list'>
         {navLinks.map((link) => (
           <li className='nav__item' key={link}>
-            <HashLink
+            <a
               className='nav__link'
-              to={`/#${link.toLowerCase()}`}
+              href={`#${link.toLowerCase()}`}
               smooth
               onClick={() => setDisplayNav(false)}
             >
               {link}
-            </HashLink>
+            </a>
           </li>
         ))}
       </ul>
