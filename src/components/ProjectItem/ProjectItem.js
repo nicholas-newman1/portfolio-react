@@ -14,7 +14,11 @@ const ProjectItem = ({ project }) => {
       <div className='project__tags'>
         {project.tags.map((tag) => (
           <div key={tag.text} className='project__tag'>
-            <Tag text={tag.text} backgroundColor={tag.backgroundColor} />
+            <Tag
+              text={tag.text}
+              backgroundColor={tag.backgroundColor}
+              color={tag.color}
+            />
           </div>
         ))}
       </div>

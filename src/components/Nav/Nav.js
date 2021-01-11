@@ -11,7 +11,6 @@ const Nav = ({ setDisplayNav }) => {
             <a
               className='nav__link'
               href={`#${link.toLowerCase()}`}
-              smooth
               onClick={() => setDisplayNav(false)}
             >
               {link}

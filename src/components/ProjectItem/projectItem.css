@@ -33,6 +33,7 @@
 
 .project__p {
   color: white;
+  font-weight: 300;
 }
 
 .project__p + .project__p {
