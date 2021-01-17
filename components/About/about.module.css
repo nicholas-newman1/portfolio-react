@@ -1,0 +1,30 @@
+.about {
+  padding: 7rem 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  max-width: 600px;
+  opacity: 0;
+  transition: 500ms;
+}
+
+.container.animate {
+  opacity: 1;
+}
+
+.text {
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  line-height: 1.7rem;
+}
+
+.text + .text {
+  margin-top: 1rem;
+}
+
+.link {
+  color: #00add8;
+  font-weight: 400;
+}

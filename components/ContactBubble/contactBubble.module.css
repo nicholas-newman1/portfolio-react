@@ -1,0 +1,24 @@
+.contact_bubble {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  width: clamp(3rem, 10vw, 5rem);
+  height: clamp(3rem, 10vw, 5rem);
+  fill: white;
+  z-index: 100;
+  background: rgba(0, 173, 216, 0.9);
+  padding: clamp(0.5rem, 2.5%, 1rem);
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 300ms;
+  transform: scale(0);
+}
+
+.contact_bubble.animate {
+  transform: scale(1);
+}
+
+.contact_bubble:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}

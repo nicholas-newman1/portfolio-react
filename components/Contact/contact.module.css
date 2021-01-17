@@ -1,0 +1,56 @@
+.contact {
+  padding: 7rem 0;
+  max-width: 500px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
+  transform: translateX(50vw);
+  opacity: 0;
+  transition: 300ms ease;
+  color: white;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.link.animate {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.link:hover {
+  transform: scale(1.05);
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 40px;
+  fill: white;
+  margin-bottom: 0.25rem;
+}
+
+@media (min-width: 370px) {
+  .link {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 450px) {
+  .link {
+    max-width: 400px;
+    padding: 2rem;
+    margin: 0 auto;
+    flex-direction: row;
+    font-size: 1rem;
+  }
+
+  .icon {
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+}
