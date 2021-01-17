@@ -12,16 +12,15 @@ const About = () => {
       <h2 className='section-heading'>About Me</h2>
       <div ref={aboutTextRef} className='about__text-container container'>
         <p className='about__text'>
-          I was about 12 years old when I wrote my first Hello World program. I
-          remember the fascination I felt when I saw logic that I had written,
-          compile into an executable program that did exactly what I told it to
-          do. It felt like I could make anything I wanted.
+          I was about 12 years old when I wrote my first "Hello World" program.
+          I remember how fascinated I was when I saw logic that I had written,
+          do exactly I wanted it to do. I felt like I could make anything I
+          wanted.
         </p>
         <p className='about__text'>
-          No, I did not become a child prodigy. By the time I got to highschool
-          I was distracted by teenage shenanigans and had lost all interest in
-          programming. A few years later, I ended up at the University of
-          Toronto, studying psychology.
+          By the time I got to highschool I became distracted by teenage
+          shenanigans and I forgot about my interest in programming. A few years
+          later, I ended up at the University of Toronto, studying psychology.
         </p>
         <p className='about__text'>
           After some careful introspection, I realized that the path I was on
@@ -29,13 +28,14 @@ const About = () => {
           instead focused my energy back on what I enjoyed as a child.
         </p>
         <p className='about__text'>
-          Ever since that decision, I have been learning the skills required to
-          be a web developer. I began with HTML, then moved on to CSS, and then
-          started to tackle JavaScript. After spending some time with
-          JavaScript, I began to dabble with React and Sass.
+          For the past year, I have been hyper-focused on becoming a front-end
+          developer. I began learning HTML, CSS, and JavaScript. After getting a
+          solid grasp on the basics, I took a deep dive into technologies such
+          as React, Sass, Webpack, and TypeScript to improve my workflow as a
+          developer.
         </p>
         <p className='about__text'>
-          I have put together some projects which can be seen{' '}
+          I've put together some projects which can be seen{' '}
           <a className='about__link' href='#projects'>
             above
           </a>{' '}
@@ -48,8 +48,7 @@ const About = () => {
           >
             GitHub
           </a>
-          . I am actively searching for job opportunities. Feel free to contact
-          me at any time!
+          . I am actively searching for job opportunities.
         </p>
       </div>
     </section>
