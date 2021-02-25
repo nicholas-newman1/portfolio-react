@@ -1,1 +1,1 @@
-- classnames package?
+- think about how to UX/UI for projects section

@@ -23,11 +23,13 @@ const ProjectItem = ({ project }) => {
         ))}
       </div>
 
-      {project.description.map((paragraph, i) => (
-        <p key={i} className={styles.p}>
-          {paragraph}
-        </p>
-      ))}
+      <ul className={styles.description}>
+        {project.description.map((item, i) => (
+          <li key={i} className={styles.li}>
+            {item}
+          </li>
+        ))}
+      </ul>
 
       <div className={styles.btns}>
         <a
@@ -39,14 +41,16 @@ const ProjectItem = ({ project }) => {
           Visit Live
         </a>
 
-        <a
-          className={`${styles.btn} ${styles.btn_code}`}
-          href={project.codeUrl}
-          target='_blank'
-          rel='noreferrer'
-        >
-          View Code
-        </a>
+        {project.codeUrl && (
+          <a
+            className={`${styles.btn} ${styles.btn_code}`}
+            href={project.codeUrl}
+            target='_blank'
+            rel='noreferrer'
+          >
+            View Code
+          </a>
+        )}
       </div>
     </li>
   );
