@@ -14,7 +14,7 @@
 }
 
 .text {
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   color: white;
   line-height: 1.7rem;
@@ -26,5 +26,4 @@
 
 .link {
   color: #00add8;
-  font-weight: 400;
 }
