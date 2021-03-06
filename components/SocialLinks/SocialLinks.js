@@ -31,7 +31,7 @@ const SocialLinks = () => {
         </li>
         <li className={styles.item}>
           <a
-            href='https://drive.google.com/file/d/1VkO9b0h-FLRtBGBFw3tlURsQA07rFVjn/view?usp=sharing'
+            href='https://drive.google.com/file/d/1jvWtHdD0USz3_SX98icCGCo5KvRPEy0W/view?usp=sharing'
             className={styles.link}
             target='_blank'
           >
