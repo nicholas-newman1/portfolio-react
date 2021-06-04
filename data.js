@@ -1,5 +1,27 @@
 export const projects = [
   {
+    id: 4,
+    title: 'Not Reddit (Forum)',
+    tags: [
+      { text: 'html', backgroundColor: '#E54D26' },
+      { text: 'react', backgroundColor: '#50BBD8' },
+      { text: 'redux', backgroundColor: '#764ABC' },
+      { text: 'material ui', backgroundColor: '#1976D2' },
+      { text: 'typescript', backgroundColor: '#2F74C0' },
+      { text: 'firebase', backgroundColor: '#F5820B' },
+    ],
+    description: [
+      'Components, Containers, and Hooks',
+      'Type-Safe with TypeScript',
+      'State Managed with Redux',
+      'Backend powered by Firebase Firestore, Authentication, and Cloud Functions',
+      'Styled with Material UI, Responsive Design',
+      'Unit & Integration Tests',
+    ],
+    liveUrl: 'https://lucid-jackson-c254a2.netlify.app/',
+    codeUrl: 'https://github.com/nicholas-newman1/not-reddit-mui',
+  },
+  {
     id: 1,
     title: 'Stock Site',
     tags: [
