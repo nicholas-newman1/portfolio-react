@@ -38,10 +38,6 @@ const About = () => {
           ability to work with Web Development technologies, specifically React,
           Redux, and Firebase.
         </p>
-        <p className={styles.text}>
-          Although I really enjoy working as a freelancer for Your Fuse, I am
-          now looking for a full-time permanent position.
-        </p>
       </div>
     </section>
   );
