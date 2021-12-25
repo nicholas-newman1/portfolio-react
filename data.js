@@ -1,3 +1,42 @@
+export const packages = [
+  {
+    id: 1,
+    title: 'firestore-text-editor',
+    tags: [
+      { text: 'react', backgroundColor: '#50BBD8' },
+      { text: 'typescript', backgroundColor: '#2F74C0' },
+      { text: 'firebase', backgroundColor: '#F5820B' },
+    ],
+    description: [
+      'Wraps react-draft-wysiwyg rich text editor and connects it to firestore',
+      'Type-Safe with TypeScript',
+      'Backend powered by Firebase Firestore',
+    ],
+    liveUrl: 'https://www.npmjs.com/package/firestore-text-editor',
+    codeUrl: 'https://github.com/nicholas-newman1/firestore-text-editor',
+  },
+  {
+    id: 2,
+    title: 'react-redux-firebase-auth',
+    tags: [
+      { text: 'react', backgroundColor: '#50BBD8' },
+      { text: 'redux', backgroundColor: '#764ABC' },
+      { text: 'material ui', backgroundColor: '#1976D2' },
+      { text: 'typescript', backgroundColor: '#2F74C0' },
+      { text: 'firebase', backgroundColor: '#F5820B' },
+    ],
+    description: [
+      'Wraps react-draft-wysiwyg rich text editor and connects it to firestore',
+      'Type-Safe with TypeScript',
+      'Backend powered by Firebase Firestore',
+      'Styled with Material UI, Responsive Design',
+      'State Managed with Redux',
+    ],
+    liveUrl: 'https://www.npmjs.com/package/react-redux-firebase-auth',
+    codeUrl: 'https://github.com/nicholas-newman1/react-redux-firebase-auth',
+  },
+];
+
 export const projects = [
   {
     id: 4,
@@ -42,40 +81,5 @@ export const projects = [
     ],
     liveUrl: 'https://cocky-mayer-6414d2.netlify.app',
     codeUrl: 'https://github.com/nicholas-newman1/stock-site',
-  },
-  {
-    id: 2,
-    title: 'Filest (Private Repo)',
-    tags: [
-      { text: 'html', backgroundColor: '#E54D26' },
-      { text: 'scss', backgroundColor: '#C6538C' },
-      { text: 'typescript', backgroundColor: '#2F74C0' },
-      { text: 'react', backgroundColor: '#50BBD8' },
-      { text: 'next.js', backgroundColor: 'white', color: 'black' },
-    ],
-    description: [
-      'Collaborated with Other Developers',
-      'SEO Friendly via Server-Side rendering with NextJS',
-      'SCSS Modules',
-      'CSS Animations',
-    ],
-    liveUrl: 'https://filest.ca',
-  },
-  {
-    id: 3,
-    title: 'Fake Store',
-    tags: [
-      { text: 'html', backgroundColor: '#E54D26' },
-      { text: 'scss', backgroundColor: '#C6538C' },
-      { text: 'js', backgroundColor: '#E7A229' },
-      { text: 'webpack', backgroundColor: '#1B74BA' },
-    ],
-    description: [
-      'Vanilla JS Components',
-      'Bundled with Webpack',
-      'BEM Naming Convention',
-    ],
-    liveUrl: 'https://elated-banach-5e96c0.netlify.app',
-    codeUrl: 'https://github.com/nicholas-newman1/fake-store-vanilla',
   },
 ];

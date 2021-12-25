@@ -2,6 +2,7 @@ import Head from 'next/head';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Hero from '../components/Hero';
+import Packages from '../components/Packages';
 import Projects from '../components/Projects';
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
 
       <Hero />
+      <Packages />
       <Projects />
       <About />
       <Contact />
