@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './nav.module.css';
 
 const Nav = ({ setDisplayNav }) => {
-  const navLinks = ['Home', 'Projects', 'About', 'Contact'];
+  const navLinks = ['Home', 'Packages', 'Projects', 'About', 'Contact'];
   return (
     <nav className={styles.nav}>
       <ul className={styles.list}>
